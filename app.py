@@ -109,6 +109,8 @@ def update_result(category:str, result):
 
             if len(str(result)) > 10:
                 result = 'Infinity'
+            elif str(result) == '99':
+                st.balloons()
         else : # = 전에 숫자가 아니었을 경우
             result = 'alert'
 
